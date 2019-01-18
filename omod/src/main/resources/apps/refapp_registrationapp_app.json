@@ -17,7 +17,7 @@
       }
     ],
     "config": {
-      "afterCreatedUrl": "/coreapps/clinicianfacing/patient.page?patientId={{patientId}}",
+      "afterCreatedUrl": "/kenyaemr/clinician/clinicianViewPatient.page?patientId={{patientId}}",
       "sections": [
         {
           "id": "contactInfo",
@@ -44,12 +44,33 @@
                   "type": "personAttribute",
                   "label": "registrationapp.patient.phone.question",
                   "formFieldName": "phoneNumber",
-                  "uuid": "14d4f066-15f5-102d-96e4-000c29c2a5d7",
+                  "uuid": "b2c38640-2603-4629-aebd-3b54f33f1e3a",
                   "widget": {
                     "providerName": "uicommons",
                     "fragmentId": "field/text"
                   },
                   "cssClasses": ["phone"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "patient-identification-section",
+          "label": "Identifiers",
+          "questions": [
+            {
+              "legend": "National ID",
+              "fields": [
+                {
+                  "type": "patientIdentifier",
+                  "label": "National ID",
+                  "formFieldName": "nationalId",
+                  "uuid": "49af6cdc-7968-4abb-bf46-de10d7f4859f",
+                  "widget": {
+                    "providerName": "uicommons",
+                    "fragmentId": "field/text"
+                  }
                 }
               ]
             }

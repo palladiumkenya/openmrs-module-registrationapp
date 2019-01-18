@@ -230,7 +230,7 @@ ${ ui.includeFragment("uicommons", "validationMessages")}
                         </fieldset>
 
                         <fieldset id="demographics-gender">
-                            <legend id="genderLabel">${ ui.message("emr.gender") }</legend>
+                            <legend id="genderLabel">Sex</legend>
                             <h3>${ui.message("registrationapp.patient.gender.question")}</h3>
                             ${ ui.includeFragment("uicommons", "field/dropDown", [
                                     id: "gender",

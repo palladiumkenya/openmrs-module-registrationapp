@@ -32,6 +32,7 @@ public class RegisterPatientPageController extends AbstractRegistrationAppPageCo
 
         PatientIdentifierType openmrsIdType = Context.getPatientService().getPatientIdentifierTypeByUuid(MEDICAL_RECORD_NUMBER);
 
+
         addModelAttributes(model, patient, app, openmrsIdType, breadcrumbOverride);
     }
 
