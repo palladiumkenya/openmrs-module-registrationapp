@@ -27,7 +27,13 @@ public class RegisterPatientPageController extends AbstractRegistrationAppPageCo
                     UiUtils ui) throws Exception {
 
         sessionContext.requireAuthentication();
-        addModelAttributes(model, patient, app, emrApiProperties.getPrimaryIdentifierType(), breadcrumbOverride);
+        String MEDICAL_RECORD_NUMBER = "dfacd928-0370-4315-99d7-6ec1c9f7ae76";
+
+
+        PatientIdentifierType openmrsIdType = Context.getPatientService().getPatientIdentifierTypeByUuid(MEDICAL_RECORD_NUMBER);
+
+
+        addModelAttributes(model, patient, app, openmrsIdType, breadcrumbOverride);
     }
 
     public void addModelAttributes(PageModel model, Patient patient, AppDescriptor app, PatientIdentifierType primaryIdentifierType, String breadcrumbOverride) throws Exception {
