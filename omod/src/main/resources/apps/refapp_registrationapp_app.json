@@ -107,6 +107,21 @@
                   }
                 }
               ]
+            },
+            {
+              "legend": "registrationapp.patient.passport.label",
+              "fields": [
+                {
+                  "type": "patientIdentifier",
+                  "label": "registrationapp.patient.passportNumber.question",
+                  "formFieldName": "passportId",
+                  "uuid": "aec1b20e-1d8a-11e9-ab14-d663bd873d93",
+                  "widget": {
+                    "providerName": "uicommons",
+                    "fragmentId": "field/text"
+                  }
+                }
+              ]
             }
           ]
         }
