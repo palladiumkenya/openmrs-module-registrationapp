@@ -52,6 +52,40 @@
                   "cssClasses": ["phone"]
                 }
               ]
+            },
+            {
+              "legend": "registrationapp.patient.alternativePhone.label",
+              "id": "alternativePhoneNumberLabel",
+              "fields": [
+                {
+                  "type": "personAttribute",
+                  "label": "registrationapp.patient.alternativePhone.question",
+                  "formFieldName": "AlternativePhoneNumber",
+                  "uuid": "94614350-84c8-41e0-ac29-86bc107069be",
+                  "widget": {
+                    "providerName": "uicommons",
+                    "fragmentId": "field/text"
+                  },
+                  "cssClasses": ["phone"]
+                }
+              ]
+            },
+            {
+              "legend": "registrationapp.patient.email.label",
+              "id": "emailLabel",
+              "fields": [
+                {
+                  "type": "personAttribute",
+                  "label": "registrationapp.patient.email.question",
+                  "formFieldName": "email",
+                  "uuid": "b8d0b331-1d2d-4a9a-b741-1816f498bdb6",
+                  "widget": {
+                    "providerName": "uicommons",
+                    "fragmentId": "field/text"
+                  },
+                  "cssClasses": ["email"]
+                }
+              ]
             }
           ]
         },
