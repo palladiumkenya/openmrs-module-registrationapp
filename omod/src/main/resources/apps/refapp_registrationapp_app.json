@@ -20,6 +20,31 @@
       "afterCreatedUrl": "/kenyaemr/clinician/clinicianViewPatient.page?patientId={{patientId}}",
       "sections": [
         {
+          "id": "personalInfo",
+          "label": "Personal Info",
+          "questions": [
+            {
+              "legend": "Alias",
+              "fields": [
+                {
+                  "type": "personAttribute",
+                  "label": "Alias(Nickname)",
+                  "formFieldName": "alias",
+                  "uuid": "aec1b592-1d8a-11e9-ab14-d663bd873d93",
+                  "widget": {
+                    "providerName": "uicommons",
+                    "fragmentId": "field/text"
+                  },
+                  "cssClasses": [
+                    "required"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+
+        {
           "id": "contactInfo",
           "label": "registrationapp.patient.contactInfo.label",
           "questions": [
