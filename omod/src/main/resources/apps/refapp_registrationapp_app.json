@@ -20,8 +20,8 @@
       "afterCreatedUrl": "/kenyaemr/clinician/clinicianViewPatient.page?patientId={{patientId}}",
       "sections": [
         {
-          "id": "personalInfo",
-          "label": "Personal Info",
+          "id": "alias",
+          "label": "Alias",
           "questions": [
             {
               "legend": "Alias",
