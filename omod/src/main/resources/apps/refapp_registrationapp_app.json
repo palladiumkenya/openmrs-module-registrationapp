@@ -52,6 +52,40 @@
                   "cssClasses": ["phone"]
                 }
               ]
+            },
+            {
+              "legend": "registrationapp.patient.alternativePhone.label",
+              "id": "alternativePhoneNumberLabel",
+              "fields": [
+                {
+                  "type": "personAttribute",
+                  "label": "registrationapp.patient.alternativePhone.question",
+                  "formFieldName": "AlternativePhoneNumber",
+                  "uuid": "94614350-84c8-41e0-ac29-86bc107069be",
+                  "widget": {
+                    "providerName": "uicommons",
+                    "fragmentId": "field/text"
+                  },
+                  "cssClasses": ["phone"]
+                }
+              ]
+            },
+            {
+              "legend": "registrationapp.patient.email.label",
+              "id": "emailLabel",
+              "fields": [
+                {
+                  "type": "personAttribute",
+                  "label": "registrationapp.patient.email.question",
+                  "formFieldName": "email",
+                  "uuid": "b8d0b331-1d2d-4a9a-b741-1816f498bdb6",
+                  "widget": {
+                    "providerName": "uicommons",
+                    "fragmentId": "field/text"
+                  },
+                  "cssClasses": ["email"]
+                }
+              ]
             }
           ]
         },
@@ -67,6 +101,21 @@
                   "label": "National ID",
                   "formFieldName": "nationalId",
                   "uuid": "49af6cdc-7968-4abb-bf46-de10d7f4859f",
+                  "widget": {
+                    "providerName": "uicommons",
+                    "fragmentId": "field/text"
+                  }
+                }
+              ]
+            },
+            {
+              "legend": "registrationapp.patient.passport.label",
+              "fields": [
+                {
+                  "type": "patientIdentifier",
+                  "label": "registrationapp.patient.passportNumber.question",
+                  "formFieldName": "passportId",
+                  "uuid": "aec1b20e-1d8a-11e9-ab14-d663bd873d93",
                   "widget": {
                     "providerName": "uicommons",
                     "fragmentId": "field/text"

@@ -80,6 +80,13 @@ ${ ui.includeFragment("uicommons", "validationMessages")}
     font-size: 15px;
     margin: 0 20px 0 0;
 }
+.register-header {
+    color: #00463f;
+    clear: both;
+    margin: 10px 0;
+    font-weight: normal;
+    padding-left: 50px !important ;
+}
 </style>
 <script type="text/javascript">
 
@@ -111,9 +118,11 @@ ${ ui.includeFragment("uicommons", "validationMessages")}
 </div>
 
 <div id="content" class="container">
+    <div class="register-header">
     <h2>
         ${ ui.message("registrationapp.registration.label") }
     </h2>
+    </div>
 
 	<div id="similarPatients" class="highlighted" style="display: none;">
 		   <div class="left" style="padding: 6px"><span id="similarPatientsCount"></span> ${ ui.message("registrationapp.similarPatientsFound") }</div><button class="right" id="reviewSimilarPatientsButton">${ ui.message("registrationapp.reviewSimilarPatients.button") }</button>
