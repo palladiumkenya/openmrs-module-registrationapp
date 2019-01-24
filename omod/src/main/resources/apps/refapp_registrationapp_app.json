@@ -120,6 +120,7 @@
           "questions": [
             {
               "legend": "National ID",
+              "id": "nationalId",
               "fields": [
                 {
                   "type": "patientIdentifier",
@@ -135,6 +136,7 @@
             },
             {
               "legend": "registrationapp.patient.passport.label",
+              "id": "passPortId",
               "fields": [
                 {
                   "type": "patientIdentifier",
