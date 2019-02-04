@@ -1,5 +1,10 @@
 <%
-    ui.decorateWith("appui", "standardEmrPage")
+    ui.decorateWith("appui", "standardEmrPage", [ patient: currentPatient ])
+    ui.includeJavascript("uicommons", "jquery-1.12.4.min.js", Integer.MAX_VALUE)
+    ui.includeJavascript("uicommons", "jquery-ui-1.9.2.custom.min.js", Integer.MAX_VALUE - 10)
+    ui.includeJavascript("uicommons", "underscore-min.js", Integer.MAX_VALUE - 10)
+    ui.includeJavascript("uicommons", "knockout-2.2.1.js", Integer.MAX_VALUE - 15)
+
     ui.includeJavascript("uicommons", "handlebars/handlebars.min.js", Integer.MAX_VALUE - 1);
     ui.includeJavascript("uicommons", "navigator/validators.js", Integer.MAX_VALUE - 19)
     ui.includeJavascript("uicommons", "navigator/navigator.js", Integer.MAX_VALUE - 20)
@@ -7,7 +12,7 @@
     ui.includeJavascript("uicommons", "navigator/navigatorModels.js", Integer.MAX_VALUE - 21)
     ui.includeJavascript("uicommons", "navigator/navigatorTemplates.js", Integer.MAX_VALUE - 21)
     ui.includeJavascript("uicommons", "navigator/exitHandlers.js", Integer.MAX_VALUE - 22);
-
+    ui.includeCss("kenyaemr", "referenceapplication.css")
     ui.includeCss("registrationapp", "editSection.css")
 
     def genderOptions = [ [label: ui.message("emr.gender.M"), value: 'M'],
