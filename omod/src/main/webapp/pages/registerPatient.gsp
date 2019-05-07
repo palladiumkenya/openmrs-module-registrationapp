@@ -9,6 +9,7 @@
     ui.includeJavascript("uicommons", "jquery-ui-1.9.2.custom.min.js", Integer.MAX_VALUE - 10)
     ui.includeJavascript("uicommons", "underscore-min.js", Integer.MAX_VALUE - 10)
     ui.includeJavascript("uicommons", "knockout-2.2.1.js", Integer.MAX_VALUE - 15)
+    ui.includeJavascript("uicommons", "emr.js", Integer.MAX_VALUE - 15)
 
 
     ui.includeJavascript("uicommons", "handlebars/handlebars.min.js", Integer.MAX_VALUE - 1);
