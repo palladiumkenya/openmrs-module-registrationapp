@@ -16,7 +16,7 @@
     }
   ],
   "config": {
-    "afterCreatedUrl": "/coreapps/clinicianfacing/patient.page?patientId={{patientId}}",
+    "afterCreatedUrl": "/coreapps/clinicianFacing/patientProfile.page?patientId={{patientId}}",
     "sections": [
       {
         "id": "otherInfo",

@@ -38,6 +38,7 @@ jq(function() {
     });
 
     function showSimilarPatients(data) {
+        console.log(data);
         if (data.length == 0 || jq('#checkbox-unknown-patient').is(':checked')) {
             jq("#similarPatients").hide();
             jq("#similarPatientsSlideView").hide();

@@ -4,7 +4,7 @@
     }
 
     ui.decorateWith("appui", "standardEmrPage")
-
+    ui.includeJavascript("uicommons", "emr.js")
     ui.includeJavascript("uicommons", "jquery-1.12.4.min.js", Integer.MAX_VALUE)
     ui.includeJavascript("uicommons", "jquery-ui-1.9.2.custom.min.js", Integer.MAX_VALUE - 10)
     ui.includeJavascript("uicommons", "underscore-min.js", Integer.MAX_VALUE - 10)
@@ -20,6 +20,7 @@
     ui.includeJavascript("uicommons", "navigator/navigatorTemplates.js", Integer.MAX_VALUE - 21)
     ui.includeJavascript("uicommons", "navigator/exitHandlers.js", Integer.MAX_VALUE - 22)
     ui.includeJavascript("registrationapp", "registerPatient.js")
+
     ui.includeCss("registrationapp","registerPatient.css")
     ui.includeCss("kenyaemr", "referenceapplication.css")
 
@@ -34,7 +35,7 @@
 
     def breadcrumbMiddle = breadcrumbOverride ?: '';
 
-    def patientDashboardLink = patientDashboardLink ? ("/${contextPath}/" + patientDashboardLink) : ui.pageLink("coreapps", "clinicianfacing/patient")
+    def patientDashboardLink = patientDashboardLink ? ("/${contextPath}/" + patientDashboardLink) : ui.pageLink("coreapps", "clinicianFacing/patientProfile")
     def identifierSectionFound = false
 %>
 
@@ -139,7 +140,7 @@ ${ ui.includeFragment("uicommons", "validationMessages")}
                 <span class="idName idNameTemplate"></span><span class="idValue idValueTemplate"></span>
             </div>
         </div>
-        <button class="local_button" style="float:right; margin:10px; padding: 2px 8px" onclick="location.href='/openmrs-standalone/coreapps/clinicianfacing/patient.page?patientId=7'">
+        <button class="local_button" style="float:right; margin:10px; padding: 2px 8px" onclick="location.href='/openmrs-standalone/coreapps/clinicianFacing/patientProfile.page?patientId=7'">
             ${ui.message("registrationapp.open")}
         </button>
         <button class="mpi_button" style="float:right; margin:10px; padding: 2px 8px" onclick="location.href='/execute_script_which_will_request_service_to_import_patient_from_mpi_to_local_DB_and_redirect_to_patient_info'">
