@@ -38,6 +38,7 @@ jq(function() {
     });
 
     function showSimilarPatients(data) {
+        console.log(data);
         if (data.length == 0 || jq('#checkbox-unknown-patient').is(':checked')) {
             jq("#similarPatients").hide();
             jq("#similarPatientsSlideView").hide();
@@ -101,7 +102,7 @@ jq(function() {
             } else {
                 button = $('#matchedPatientTemplates .local_button').clone();
                 var link = patientDashboardLink;
-                link += '?patientId=' + item.uuid;
+                link += '?patientId=' + item.patientId;
                 button.attr("onclick", "location.href=\'" + link + "\'");
             }
             cloned.append(button);

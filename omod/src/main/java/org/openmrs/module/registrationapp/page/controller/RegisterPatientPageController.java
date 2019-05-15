@@ -46,6 +46,7 @@ public class RegisterPatientPageController extends AbstractRegistrationAppPageCo
         AddressSupportCompatibility addressSupport = Context.getRegisteredComponent(AddressSupportCompatibility.ID, AddressSupportCompatibility.class);
         
         model.addAttribute("patient", patient);
+
         model.addAttribute("primaryIdentifierType", primaryIdentifierType);
         model.addAttribute("appId", app.getId());
         model.addAttribute("formStructure", formStructure);

@@ -51,7 +51,7 @@ public class MatchingPatientsFragmentController {
     public static final double CUTOFF = 2.0;
 
     public static final String[] PATIENT_PROPERTIES = new String[]{"uuid", "givenName", "familyName",
-            "gender", "birthdate", "personAddress"};
+            "gender", "birthdate", "personAddress", "patientId"};
 
     public static final String[] MPI_PATIENT_PROPERTIES = new String[]{"uuid", "givenName", "familyName",
             "gender", "birthdate", "personAddress", "mpiPatient"};
