@@ -102,7 +102,7 @@ jq(function() {
             } else {
                 button = $('#matchedPatientTemplates .local_button').clone();
                 var link = patientDashboardLink;
-                link += '?patientId=' + item.uuid;
+                link += '?patientId=' + item.patientId;
                 button.attr("onclick", "location.href=\'" + link + "\'");
             }
             cloned.append(button);

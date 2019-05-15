@@ -35,7 +35,7 @@
 
     def breadcrumbMiddle = breadcrumbOverride ?: '';
 
-    def patientDashboardLink = patientDashboardLink ? ("/${contextPath}/" + patientDashboardLink) : ui.pageLink("coreapps", "clinicianFacing/patientProfile")
+    def patientDashboardLink = patientDashboardLink ? ("/${contextPath}/" + patientDashboardLink) : ui.pageLink("kenyaemr", "clinicianFacing/patientProfile")
     def identifierSectionFound = false
 %>
 
