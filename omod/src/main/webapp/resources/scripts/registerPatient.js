@@ -227,7 +227,7 @@ jq(function() {
 
             // TODO sections variable is currently hackily defined in registerPatient.gsp
             _.each(sections, function(section) {
-                if (section != 'demographics') {
+                if (section != 'demographics' && section != 'alias') {
                     NavigatorController.getSectionById(section).disable();
                 }
             });
