@@ -17,7 +17,7 @@
       }
     ],
     "config": {
-      "afterCreatedUrl": "/htmlformentryui/htmlform/enterHtmlFormWithSimpleUi.page?patientId={{patientId}}&definitionUiResource=kenyaemr:simpleuiforms/kpSocialStatus.xml&returnUrl=/openmrs/kenyaemr/clinicianFacing/patientProfile.page?patientId={{patientId}}",
+      "afterCreatedUrl": "/kenyaemr/enterForm.page?appId=kenyaemr.medicalEncounter&patientId={{patientId}}&formUuid=185dec84-df6f-4fc7-a370-15aa8be531ec&returnUrl=/openmrs/kenyaemr/clinicianFacing/patientProfile.page?patientId={{patientId}}",
       "sections": [
         {
           "id": "alias",
