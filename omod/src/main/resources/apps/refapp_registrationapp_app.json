@@ -152,7 +152,8 @@
         }
       ],
       "allowRetrospectiveEntry":true,
-      "registrationEncounter":"de1f9d67-b73e-4e1b-90d0-036166fc6995"
+      "registrationEncounter":"de1f9d67-b73e-4e1b-90d0-036166fc6995",
+      "allowUnknownPatients":false
     }
   }
 ]
