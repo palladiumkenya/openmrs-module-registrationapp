@@ -17,7 +17,7 @@
       }
     ],
     "config": {
-      "afterCreatedUrl": "/htmlformentryui/htmlform/enterHtmlFormWithSimpleUi.page?patientId={{patientId}}&definitionUiResource=kenyaemr:simpleuiforms/kpSocialStatus.xml&returnUrl=/openmrs/kenyaemr/clinicianfacing/patient.page?patientId={{patientId}}",
+      "afterCreatedUrl": "/kenyaemr/enterForm.page?appId=kenyaemr.medicalEncounter&patientId={{patientId}}&formUuid=185dec84-df6f-4fc7-a370-15aa8be531ec&returnUrl=/openmrs/kenyaemr/clinicianFacing/patientProfile.page?patientId={{patientId}}",
       "sections": [
         {
           "id": "alias",
@@ -35,9 +35,7 @@
                     "providerName": "uicommons",
                     "fragmentId": "field/text"
                   },
-                  "cssClasses": [
-                    "required"
-                  ]
+                  "cssClasses": []
                 }
               ]
             }
@@ -55,8 +53,12 @@
                   "type": "personAddress",
                   "label": "registrationapp.patient.address.question",
                   "widget": {
-                    "providerName": "uicommons",
-                    "fragmentId": "field/personAddress"
+                    "providerName": "registrationapp",
+                    "fragmentId": "field/personAddressWithHierarchy",
+                    "config" : {
+                      "shortcutFor": "address1",
+                      "manualFields": ["address2"]
+                    }
                   }
                 }
               ]
@@ -154,7 +156,8 @@
         }
       ],
       "allowRetrospectiveEntry":true,
-      "registrationEncounter":"de1f9d67-b73e-4e1b-90d0-036166fc6995"
+      "registrationEncounter":"de1f9d67-b73e-4e1b-90d0-036166fc6995",
+      "allowUnknownPatients":false
     }
   }
 ]
