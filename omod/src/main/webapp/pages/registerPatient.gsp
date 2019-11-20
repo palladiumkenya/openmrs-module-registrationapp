@@ -1,6 +1,11 @@
 <%
-    if (sessionContext.authenticated && !sessionContext.currentProvider) {
-        throw new IllegalStateException("Logged-in user is not a Provider")
+
+    def logedUser = (sessionContext.currentUser).toString()
+    if (sessionContext.authenticated && logedUser != 'admin') {
+
+        if (sessionContext.authenticated && !sessionContext.currentProvider) {
+            throw new IllegalStateException("Logged-in user is not a Provider")
+        }
     }
 
     ui.decorateWith("appui", "standardEmrPage")
